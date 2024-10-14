@@ -1,0 +1,36 @@
+# Keyword Processing Scripts: A Quick Guide
+
+This article provides a straightforward approach to processing keyword data using Python scripts. The scripts are designed to handle keyword data in both text (TXT) and CSV formats. Follow the instructions below for installation and usage.
+
+## Installation
+
+Before you begin, ensure you have Python installed on your system. Then, you can install the required libraries using pip. Open your terminal and run the following commands:
+
+```bash
+pip install pandas scikit-learn nltk
+```
+
+## Preparing Your Keyword Files
+
+1. **For Text Files (TXT)**:
+   - Copy your keywords into a file named `input.txt`.
+
+2. **For CSV Files**:
+   - If you've downloaded CSV files from SEMrush or other platforms, rename the file to `input.csv`.
+
+## Running the Scripts
+
+After preparing your keyword files, you can run the respective scripts based on the format of your input file:
+
+- **For CSV Files**:
+   ```bash
+   python kg-csv.py
+   ```
+   This command processes the keywords in `input.csv` and outputs the sorted keywords to `csv_sorted_keywords_output.csv`.
+
+- **For Text Files**:
+   ```bash
+   python kg-txt.py
+   ```
+   This command processes the keywords in `input.txt` and outputs the sorted keywords to `txt_sorted_keywords_output.txt`.
+
